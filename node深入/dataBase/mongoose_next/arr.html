@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<script type="text/javascript">
+	
+	function removeWithoutCopy(arr, item) {
+	var array=[];
+    var obj={};
+    for(var i=0;i<arr.length;i++){
+        if(arr[i]===item){
+            obj[i]=i;
+        }
+    }
+    //    arr= arr.splice(obj[j],1);
+
+    // for(var j=1;j<obj.length;j++){
+    //    arr= arr.splice(obj[j]-1,1);
+        
+    // }
+    console.log(obj.length);
+};
+removeWithoutCopy([1, 2, 2, 3, 4, 2, 2], 2)
+</script>
+<body>
+	
+</body>
+</html>
